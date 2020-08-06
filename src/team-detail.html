@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Match Detail</title>
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- ios support -->
+    <link
+      rel="apple-touch-icon"
+      href="img/icons/apple touch icon 180x180.png"
+    />
+    <meta name="theme-color" content="#0d47a1" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <nav class="blue darken-4" role="navigation">
+        <div class="nav-wrapper container">
+          <a href="./" class="brand-logo" id="logo-container"
+            ><i class="material-icons">arrow_back</i></a
+          >
+
+          <ul class="topnav right hide-on-med-and-down"></ul>
+          <ul class="sidenav" id="nav-mobile"></ul>
+        </div>
+      </nav>
+      <!-- mobile nav -->
+      <ul class="sidenav" id="mobile-nav"></ul>
+    </header>
+
+    <!-- body -->
+    <!-- 
+    <div class="container team-detail center">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/de/a/aa/Fc_barcelona.svg"
+        alt=""
+        class="team-logo"
+      />
+
+      <div class="left-align">
+        <ul class="tabs tabs-fixed-width tab-demo z-depth-1">
+          <li class="tab"><a class="active" href="#detail">Detail</a></li>
+          <li class="tab"><a href="#squad">Squad</a></li>
+          <li class="tab"><a href="#schedule">Schedule</a></li>
+        </ul>
+
+        <div id="detail" class="col s12">
+          <ul class="collection">
+            <li class="collection-item">
+              <div class="row">
+                <span class="title-detail col s2">Name</span>
+                <span class="col s8 offset-s2">abrcelbj</span>
+              </div>
+            </li>
+            <li class="collection-item">
+              <div class="row">
+                <span class="title-detail col s2">dbwfbwifb fwf w</span>
+                <span class="col s8 offset-s2">abrcelbj</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div id="squad" class="col s12">
+          <ul class="collection">
+            <li class="collection-item">
+              <div class="row">
+                <span class="title-detail col s2">goalkeepr</span>
+                <span class="col s9 offset-s1">abrcelbj</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div id="schedule" class="col s12">
+          <div class="card-panel blue darken-4 hoverable match-item">
+            <div class="row white-text valign-wrapper">
+              <div class="col s5 right-align team-name">
+                psms
+              </div>
+
+              <div class="col s2 center bor">
+                vs
+              </div>
+
+              <div class="col s5 left-align team-name">persib</div>
+            </div>
+
+            <div class="row white-text get-team-detail">
+              <div class="col s5 home-score right-align">
+                <a
+                  href="../team-detail.html?id=${
+            match.homeTeam.id
+          }"
+                  class="btn-small blue accent-1"
+                  >Team Detail</a
+                >
+              </div>
+
+              <div class="col s2 center bor"></div>
+
+              <div class="col s5 away-score left-align">
+                <a
+                  href="../team-detail.html?id=${
+            match.awayTeam.id
+          }"
+                  class="btn-small blue accent-1"
+                  >Team Detail</a
+                >
+              </div>
+            </div>
+
+            <div class="row white-text center match-date">12 maret</div>
+          </div>
+        </div>
+      </div>
+    </div>
+ -->
+
+    <main id="body-content">
+      <div class="container standing center">
+        <div class="preloader-wrapper big active">
+          <div class="spinner-layer spinner-blue-only">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div>
+            <div class="gap-patch">
+              <div class="circle"></div>
+            </div>
+            <div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- save to fav -->
+    <div class="fixed-action-btn hide" id="save-button">
+      <a
+        class="btn-floating btn-large blue lighten-1 pulse tooltipped"
+        data-position="left"
+        data-tooltip="Save to Favorite"
+        id="save"
+      >
+        <i class="material-icons">save</i>
+      </a>
+    </div>
+
+    <!-- delete from fav -->
+    <div class="fixed-action-btn" id="delete-button">
+      <a
+        class="btn-floating btn-large blue lighten-1 pulse tooltipped"
+        data-position="left"
+        data-tooltip="Delete from Favorite"
+        id="cancel"
+      >
+        <i class="material-icons">cancel</i>
+      </a>
+    </div>
+
+    <!-- footer -->
+    <footer class="page-footer blue darken-4 center">
+      <div class="footer-copyright">
+        <div class="container">
+          © adiglase
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

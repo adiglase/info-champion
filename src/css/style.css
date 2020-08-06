@@ -1,0 +1,117 @@
+@import '~material-design-icons/iconfont/material-icons.css';
+@import '~materialize-css/dist/css/materialize.min.css';
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.page-footer {
+  padding-top: 0;
+}
+
+.match-result-list,
+.standing {
+  padding: 20px;
+}
+
+.match-result-list .card-panel {
+  margin-bottom: 25px;
+}
+
+.card-panel.match-item {
+  padding: 15px;
+}
+
+.match-item .team-name {
+  font-size: 1.3rem;
+}
+
+.match-item .row {
+  margin-bottom: 0;
+}
+
+.match-item .full-time-score {
+  font-size: 1.5rem;
+}
+
+.match-item .stage {
+  margin-bottom: 5px;
+}
+
+.match-item .match-date {
+  margin-top: 5px;
+}
+
+.club-logo {
+  width: 20px;
+  margin-right: 20px;
+}
+
+.group-item {
+  margin-bottom: 50px;
+}
+
+.group-name {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.get-team-detail {
+  margin-top: 10px;
+}
+
+.team-detail {
+  padding: 40px 0 40px 0;
+}
+.team-logo {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+/* tabs in team detail */
+
+.tabs .tab a {
+  color: #0d47a1 !important;
+  /*Custom Text Color*/
+}
+
+.tabs .tab a:focus.active {
+  color: white !important;
+  /*Custom Text Color While Active*/
+  background-color: #0d47a1;
+  /*Custom Background Color While Active*/
+}
+
+.tabs .indicator {
+  background-color: black;
+  /*Custom Color Of Indicator*/
+}
+
+/* tabs end */
+
+.title-detail {
+  font-weight: bold;
+}
+
+.collection-item .row {
+  margin-bottom: 0;
+}
+
+.team-logo-fav {
+  max-height: 150px;
+  max-width: 150px;
+}
+
+#fav-team-item {
+  padding: 20px 20px 0 20px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
