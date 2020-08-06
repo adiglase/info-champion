@@ -115,3 +115,7 @@ main {
   justify-content: center;
   align-items: center;
 }
+
+.brand-logo {
+  font-size: 1rem;
+}
