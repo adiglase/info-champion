@@ -1,4 +1,4 @@
-var webPush = require('web-push');
+const webPush = require('web-push');
 
 const vapidKeys = {
   publicKey:
@@ -11,7 +11,7 @@ webPush.setVapidDetails(
   vapidKeys.publicKey,
   vapidKeys.privateKey
 );
-var pushSubscription = {
+const pushSubscription = {
   endpoint:
     'https://fcm.googleapis.com/fcm/send/fS3YSiPm7zg:APA91bHwu-vkc-iQeR3sbSbS5auOFDuE6ka9gme1bCRr7WtO0M-YKtzwis4nEi9PjOz1GK-jy1VswrebjnBekfqk8xKmfnia8BjEYaFbfvBIKumcXQtiV1xfY96ZaTzCr3rb0dunVjVD',
   keys: {
@@ -20,9 +20,9 @@ var pushSubscription = {
     auth: 'FyYGDK6hYk5t0jdQx+hSGQ==',
   },
 };
-var payload = 'Selamat! Aplikasi Anda sudah dapat menerima push notifikasi!';
+const payload = 'Selamat! Aplikasi Anda sudah dapat menerima push notifikasi!';
 
-var options = {
+const options = {
   gcmAPIKey: '798809937505',
   TTL: 60,
 };

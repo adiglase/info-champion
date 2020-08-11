@@ -1,7 +1,7 @@
 const { assets } = global.serviceWorkerOption;
 const CACHE_NAME = 'infochampioncache-v1';
 
-let urlsToCache = [...assets, './'];
+let urlsToCache = [...assets, './', 'https://fonts.googleapis.com/icon?family=Material+Icons'];
 
 urlsToCache = urlsToCache.map((path) => {
   return new URL(path, global.location).toString();
@@ -56,13 +56,13 @@ self.addEventListener('activate', function (event) {
 });
 
 self.addEventListener('push', function (event) {
-  var body;
+  const body;
   if (event.data) {
     body = event.data.text();
   } else {
     body = 'Push message no payload';
   }
-  var options = {
+  const options = {
     body: body,
     icon: 'img/notification.png',
     vibrate: [100, 50, 100],

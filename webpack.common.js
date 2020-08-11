@@ -30,26 +30,6 @@ module.exports = {
       template: './src/template.html',
       chunks: ['main', 'materialize'],
     }),
-    // new HtmlWebpackPlugin({
-    //   template: './src/nav.html',
-    //   filename: 'nav.html',
-    // }),
-    // new HtmlWebpackPlugin({
-    //   template: './src/pages/home.html',
-    //   filename: 'pages/home.html',
-    // }),
-    // new HtmlWebpackPlugin({
-    //   template: './src/pages/schedule.html',
-    //   filename: 'pages/schedule.html',
-    // }),
-    // new HtmlWebpackPlugin({
-    //   template: './src/pages/standing.html',
-    //   filename: 'pages/standing.html',
-    // }),
-    // new HtmlWebpackPlugin({
-    //   template: './src/pages/favorite-teams.html',
-    //   filename: 'pages/favorite-teams.html',
-    // }),
     new HtmlWebpackPlugin({
       template: './src/team-detail.html',
       chunks: ['teamDetail', 'materialize'],
